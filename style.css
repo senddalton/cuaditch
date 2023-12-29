@@ -1,12 +1,12 @@
 :root {
-    background-color: white;
+    background-color: #038554;
     color: black;
   }
   
   /* If user prefers a dark appearance */
   @media (prefers-color-scheme: dark) {
     :root {
-      background-color: #572364;
+      background-color: #171a4a;
       color: white;
     }
   }
