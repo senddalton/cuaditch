@@ -3,7 +3,6 @@
     color: black;
   }
   
-  /* If user prefers a dark appearance */
   @media (prefers-color-scheme: dark) {
     :root {
       background-color: #171a4a;
