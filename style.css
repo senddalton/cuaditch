@@ -6,7 +6,7 @@
   /* If user prefers a dark appearance */
   @media (prefers-color-scheme: dark) {
     :root {
-      background-color: purple;
+      background-color: #572364;
       color: white;
     }
   }
