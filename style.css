@@ -1,0 +1,12 @@
+:root {
+    background-color: white;
+    color: black;
+  }
+  
+  /* If user prefers a dark appearance */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      background-color: black;
+      color: white;
+    }
+  }
