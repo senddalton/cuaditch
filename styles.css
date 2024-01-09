@@ -14,12 +14,12 @@
 
   @media screen and(max-width:767px){
     body{
-      font-size: 14px;
+      font-size: 20px;
     }
   }
 
   @media screen and(min-width:767px) and(max-width:991px){
     body{
-      font-size: 19px;
+      font-size: 30px;
     }
   }
