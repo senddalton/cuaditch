@@ -1,6 +1,7 @@
 :root {
     background-color: #5abd9f;
     color: black;
+    font-size: 25px;
     font-family: cursive;
     font-style: italic;
   }
@@ -20,6 +21,6 @@
 
   @media screen and(min-width:767px) and(max-width:991px){
     body{
-      font-size: 30px;
+      font-size: 60px;
     }
   }
