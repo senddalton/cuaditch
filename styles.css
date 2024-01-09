@@ -1,0 +1,25 @@
+:root {
+    background-color: #5abd9f;
+    color: black;
+    font-family: cursive;
+    font-style: italic;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      background-color: #484952;
+      color: white;
+    }
+  }
+
+  @media screen and(max-width:767px){
+    body{
+      font-size: 14px;
+    }
+  }
+
+  @media screen and(min-width:767px) and(max-width:991px){
+    body{
+      font-size: 19px;
+    }
+  }
