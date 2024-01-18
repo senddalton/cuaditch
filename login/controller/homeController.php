@@ -2,7 +2,7 @@
     class homeControler{
         private $MODEL;
         public function __construct(){
-            require_once("c://xampp/htdocs/login/model/homeModel.php");
+            require_once("login/model/homeModel.php");
             $this->MODEL = new homeModel();
         }
         public function guardarUsuario($correo,$password){
