@@ -2,7 +2,7 @@
     class homeModel{
         private $PDO;
         public function __construct(){
-            require_once("c://xampp/htdocs/login/config/db.php");
+            require_once("login/config/db.php");
             $pdo = new db();
             $this->PDO = $pdo->conexion();
         }
