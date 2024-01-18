@@ -1,5 +1,5 @@
 <?php
-    require_once("c://xampp/htdocs/login/controller/homeController.php");
+    require_once("login/controller/homeController.php");
     $obj = new homeControler();
     $correo = $_POST['correo'];
     $password = $_POST['password'];
@@ -11,7 +11,7 @@
     }else if($correo && $password && $confirmPassword){
         if($password == $confirmPassword){
             if($obj->guardarUsuario($correo, $password) == false){
-                $error .= "<li> El correo ya se ha registrado ";
+                $error .= "<li> El correo ya se ha registrado </li>";
                 header("Location:signup.php?error=".$error."&&correo=".$correo."&&password=".$password."&&confirmPassword=".$confirmPassword);
             }else{
                 header("Location:login.php");
