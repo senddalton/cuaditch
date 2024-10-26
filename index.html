@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Básico</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">Anterior</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">Siguiente</button>
+        </div>
+        <div class="calendar-grid">
+            <div class="day-name">Dom</div>
+            <div class="day-name">Lun</div>
+            <div class="day-name">Mar</div>
+            <div class="day-name">Mié</div>
+            <div class="day-name">Jue</div>
+            <div class="day-name">Vie</div>
+            <div class="day-name">Sáb</div>
+            <div id="calendarDays" class="calendar-days"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
