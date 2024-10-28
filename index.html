@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario Básico</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Agenda de Citas</title>
+    <link href="styles.css" rel="stylesheet"> <!-- Enlace al archivo de estilos -->
 </head>
 <body>
-    <div class="calendar-container">
-        <div class="calendar-header">
-            <button id="prevMonth">Anterior</button>
-            <h2 id="monthYear"></h2>
-            <button id="nextMonth">Siguiente</button>
+    <h1>Calendario de Citas</h1>
+    <div id="calendar-container">
+        <div id="calendar-header">
+            <button id="prev-month">Anterior</button>
+            <h2 id="current-month-year"></h2>
+            <button id="next-month">Siguiente</button>
         </div>
-        <div class="calendar-grid">
-            <div class="day-name">Dom</div>
-            <div class="day-name">Lun</div>
-            <div class="day-name">Mar</div>
-            <div class="day-name">Mié</div>
-            <div class="day-name">Jue</div>
-            <div class="day-name">Vie</div>
-            <div class="day-name">Sáb</div>
-            <div id="calendarDays" class="calendar-days"></div>
+        <div id="calendar-grid">
+            <!-- Fila para las etiquetas de los días -->
+            <div class="day-label">Dom</div>
+            <div class="day-label">Lun</div>
+            <div class="day-label">Mar</div>
+            <div class="day-label">Mié</div>
+            <div class="day-label">Jue</div>
+            <div class="day-label">Vie</div>
+            <div class="day-label">Sáb</div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Enlace al archivo de script -->
 </body>
 </html>
