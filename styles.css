@@ -111,6 +111,14 @@ h1 {
 
 /* Responsividad */
 @media (max-width: 768px) {
+
+    #calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); /* Siempre 7 columnas para vista mensual */
+        gap: 1px;
+        background-color: #eee;
+    }
+
     #calendar-header {
         flex-direction: column;
     }
