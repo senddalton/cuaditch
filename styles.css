@@ -109,55 +109,87 @@ h1 {
     cursor: not-allowed;
 }
 
+/* Estilos para el Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
-
     #calendar-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr); /* Siempre 7 columnas para vista mensual */
-        gap: 1px;
-        background-color: #eee;
+        grid-template-columns: repeat(7, 1fr); /* Mantiene 7 columnas para vista mensual */
     }
 
     #calendar-header {
         flex-direction: column;
     }
+
     #calendar-header button {
         width: 100%;
         margin-bottom: 5px;
     }
+
     .day-cell, .day-label {
         padding: 8px; /* Reducir padding en dispositivos medianos */
         font-size: 0.9rem;
     }
+
     #hours-list {
         grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas en vista de horas */
     }
 }
 
 @media (max-width: 480px) {
-
     #calendar-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr); /* Siempre 7 columnas para vista mensual */
-        gap: 1px;
-        background-color: #eee;
+        grid-template-columns: repeat(7, 1fr); /* Mantiene 7 columnas para vista mensual */
     }
 
     #calendar-header h2 {
         font-size: 1.2rem;
     }
+
     .day-cell, .day-label {
-        padding: 6px; /* Aún más pequeño para dispositivos móviles */
+        padding: 6px; /* Más pequeño para dispositivos móviles */
         font-size: 0.8rem;
     }
+
     #hours-list {
         grid-template-columns: 1fr; /* Cambiar a una columna en vista de horas para móviles */
     }
+
     .hour-slot {
         padding: 8px;
         font-size: 0.9rem;
     }
+
     #selected-date {
         font-size: 1rem;
     }
